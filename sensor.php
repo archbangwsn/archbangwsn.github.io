@@ -80,11 +80,11 @@ class Archbang_Nodemcu
 
     private function open_connection()
     {
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $servername = "archbangwsn.github.io";
+       
+       
         $dbname = "archbang";
-        $conn = new mysqli($servername, $username, $password, $dbname) or die("Failed connect: %s\n" . $conn->error);
+        $conn = new mysqli($servername, $dbname) or die("Failed connect: %s\n" . $conn->error);
         return $conn;
     }
 
